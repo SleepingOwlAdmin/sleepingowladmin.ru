@@ -1,0 +1,156 @@
+body {
+    font-family: Roboto, serif;
+}
+
+.sidebar-nav {
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    overflow-y: auto;
+    height: calc(100% - 168px);
+    box-sizing: content-box;
+    padding-right: 17px;
+}
+
+.markdown-section a {
+
+    color: var(--theme-color,#2b90b3);
+    font-weight: 700;
+
+}
+.sidebar li {
+    margin: 0
+}
+.sidebar .sidebar-nav {
+    line-height:1.5em;
+    padding-bottom:40px
+   }
+
+.sidebar ul li.active > a {    
+    color: var(--theme-color,#2b90b3);
+    font-weight: 700;
+    
+}
+
+.sidebar ul, .sidebar ul li {    
+    font-weight: 400;
+
+}
+.sidebar ul li a {
+    font-size: 14px;
+    color: #2b90b3;
+
+}
+
+.sidebar-nav>ul>li>ul {
+    border-top: 1px dashed rgba(0,0,0,.1);
+    display: block;
+    list-style: none;
+    margin: .5em 0 0;
+    padding: .5em 0 0;
+    font-size: 14px;
+}
+
+.sidebar-nav>ul>li {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 0 10px;
+    margin: 1em 0 0;
+}
+
+.logo svg {
+    fill: #007da8;
+    height: 45px;
+    width: 45px;
+}
+.logo {    
+    -webkit-box-align: center;
+    align-items: center;    
+    color: #007da8;    
+    font-size: 1em;    
+    float: left;    
+    line-height: 80px;    
+    padding: 0 10px;    
+    display: flex;
+}
+
+.sidebar-toggle span {
+    background-color: var(--theme-color,#2b90b3);
+}
+
+
+.gitter-open-chat-button:focus, .gitter-open-chat-button:hover {
+    
+    background-color: #257b97;    
+
+}
+.gitter-open-chat-button {
+
+    background-color: #2b90b3;    
+}
+
+h1,h2,h3 {
+    position: relative;
+}
+
+.anchor span {
+    font-weight: 400;
+    color: #525252;
+}
+
+h1 .anchor span {
+    font-size: 48px;
+    font-weight: 200;
+    color: #525252;
+}
+
+.github-corner svg {
+    color: #FFFFFF !important;
+    fill: #2980B9 !important;
+}
+
+.search {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    border-top: 1px solid #EEEEEE;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.markdown-section li {
+    list-style: none;
+}
+
+.markdown-section li a {
+    text-decoration: none;
+}
+
+.markdown-section li a:hover {
+    text-decoration: none;
+    color: #257b97;
+}
+
+.markdown-section li:before {
+    
+    content: "# ";
+    margin-right: .25em;
+    color: #2b90b3;
+    opacity: .3;
+}
+
+.anchor:before {
+    font-family: 'ForkAwesome';
+    content: "\f0c1";    
+    margin-left: -15px;    
+    font-size: 12px;    
+    bottom: 8px;    
+    opacity: .6;    
+    color: #2b90b3;    
+    position: absolute;    
+    display: none;
+}
+.anchor:hover:before{
+    display: block
+}
+
