@@ -158,3 +158,33 @@ h1 .anchor span {
     display: block
 }
 
+.main-logo {
+    margin: auto;
+    fill:#007da8;    
+    width: 8%;
+}
+
+section.cover .cover-main > p:last-child a {
+    border:1px solid var(--theme-color,#007da8);
+    border-radius:2rem;
+    box-sizing:border-box;
+    color:var(--theme-color,#007da8);
+    display:inline-block;
+    font-size:1.05rem;
+    letter-spacing:.1rem;
+    margin:.5rem 1rem;
+    padding:.75em 2rem;
+    text-decoration:none;
+    transition:all .15s ease
+   }
+
+   section.cover .cover-main>p:last-child a:last-child {
+    background-color:var(--theme-color,#007da8);
+    color:#fff
+   }
+
+.markdown-section p.warn {
+    background: #2b90ba3d;
+    border-radius: 2px;
+    padding: 1rem;
+}
