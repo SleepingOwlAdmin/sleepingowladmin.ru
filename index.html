@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" title="vue">
+  
+  
   <link rel="stylesheet" href="/custom.css?v=3">
 </head>
 <body>
@@ -43,6 +46,7 @@
       '/en': 'en/_404.md'
       },
       auto2top: true,      
+      ga: 'UA-47325178-4',
       relativePath: true,
       executeScript: true,
       loadNavbar: true,
@@ -50,8 +54,27 @@
       mergeNavbar: true,
       onlyCover: true,
       maxLevel: 1,
-      subMaxLevel: 1,
+      subMaxLevel: 1,      
       formatUpdated: '{DD}.{MM} {HH}:{mm}',
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            if (/githubusercontent\.com/.test(vm.route.file)) {
+              url = vm.route.file
+                .replace('raw.githubusercontent.com', 'github.com')
+                .replace(/\/new/, '/blob/new')
+                .replace(/\/docs/, '')
+            } else {
+              url = 'https://github.com/SleepingOwlAdmin/docs/blob/new' + vm.route.file.replace(/docs/, '')
+            }
+            var editHtml = '[:memo: Редактировать](' + url + ')\n'
+
+            return editHtml
+              + html;
+              
+          })
+        },       
+      ],
       nameLink:{
       '/en/': '/#/en/',
       '/': '/'
