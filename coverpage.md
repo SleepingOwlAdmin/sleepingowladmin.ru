@@ -24,7 +24,11 @@
 
 [Документация](/ru/installation)
 [Демо](http://demo.sleepingowladmin.ru)
-[GitHub](https://github.com/laravelrus/sleepingowladmin/)
+[Демо bs4](http://bs4.sleepingowladmin.ru)<br>
+[GitHub Doc](https://github.com/SleepingOwlAdmin/docs/tree/new)
+[GitHub Demo](https://github.com/SleepingOwlAdmin/demo)
+[GitHub SOA](https://github.com/laravelrus/sleepingowladmin/)<br>
+[Telegram Chat](https://t.me/prtcls)
 
 
 <!-- background color -->
